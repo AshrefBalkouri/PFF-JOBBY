@@ -18,7 +18,7 @@ const ListUsers = () => {
           <div style={{display : "flex" , justifyContent:'space-around'}}>
           <div  style={{display : "flex" , gap:'20px', flexWrap:'wrap', width:'81%'}}>
           {
-              users.map((el,i,t)=> <CardUser el={el} />)
+              users.map((el,i,t)=> <CardUser key={i} el={el} />)
             }
           </div>
 
